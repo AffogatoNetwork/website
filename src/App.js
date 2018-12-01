@@ -15,6 +15,7 @@ class App extends Component {
               className="App-link"
               href="http://buidlhonduras.com/tag/coffee/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               our blog
             </a>
