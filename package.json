@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://affogatonetwork.github.io/website/",
+  "homepage": "https://affogatonetwork.com",
   "dependencies": {
     "push-dir": "^0.4.1",
     "react": "^16.6.3",
