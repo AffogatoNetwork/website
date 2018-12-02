@@ -15,3 +15,8 @@ deploy:
   local_dir: build
   on:
     branch: master
+
+notifications:
+  slack:
+    on_success: always
+    on_failure: always
