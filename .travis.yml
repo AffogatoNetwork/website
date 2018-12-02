@@ -17,7 +17,7 @@ deploy:
     branch: master
 
 notifications:
-  slack: affogatonetwork:FRwPzIhNnRgeJPhG5TpAnDuV
+  slack: affogatonetwork:awKaVo1SmGOi53S1SWh2Bczq
     on_success: always
     on_failure: always
   email: false
