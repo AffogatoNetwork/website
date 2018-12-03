@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>The Coffee Economy on the Ethereum Blockchain</h2>
-          <p>
+          <p className="">
             We are rebuilding our site, you can see the team updates in{" "}
             <a
               className="App-link"
