@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./Landing.css";
 import "./App.css";
+import icon from "./images/logo-white.png";
+import phone from "./images/phone.svg";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 class App extends Component {
   render() {
@@ -8,22 +11,58 @@ class App extends Component {
       <div className="wrapper">
         <section className="asymmetric">
           <header>
-            <h2>Heading</h2>
-            <p>
-              Lorem ipsum dolor sit amet, magna tellus, ultricies etphasellus
-              tincidunt elit nec. Ornare sollicitudin sapien non, dignissim
-              metus wisi pharetra sollicitudin, sem integer. Nibh sem et amet,
-              ultrices ac interdum, nec enim lorem elit commodo dolor, aliquam
-              ipsum eget ornare nullam, iaculis porttitor. Quisque sint,
-              lobortis rutrum est nonummy, potenti quam quam molestie pede
-              porta. Sem ante dis dui wisi suscipit, eu vitae odio integer,
-              congue velit lectus aliquet luctus bibendum, et facilisis, laoreet
-              ad
-            </p>
+            <div className="container-fluid ">
+              <div className="row">
+                <Nav className="col-8 offset-md-1 ">
+                  <NavItem>
+                    <NavLink href="#">
+                      <img src={icon} className="mr-2 logo" />
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Link</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Link</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Link</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Link</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="#">Link</NavLink>
+                  </NavItem>
+                </Nav>
+              </div>
+            </div>
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-6 col-sm-12 offset-md-1 no-gutters">
+                  <h1 class="col-lg-12">
+                    The coffee economy on the Blockchain
+                  </h1>
+                  <p class="col-lg-10 mt-4 description">
+                    Body, dark, galão pumpkin spice, in, galão, in a iced java
+                    chicory. Ristretto, cortado id brewed wings acerbic java
+                    kopi-luwak bar and latte. Coffee caffeine iced aftertaste
+                    milk barista frappuccino.
+                  </p>
+                  <div className="call-to-action">
+                    <button type="submit" className="col-5 btn btn-primary">
+                      Get the latest news
+                    </button>
+                  </div>
+                </div>
+                <div className="col-lg-4 d-none d-lg-block ">
+                  <img src={phone} className="img-fluid landing-phone" />
+                </div>
+              </div>
+            </div>
           </header>
         </section>
         <section id="primary">
-          <div className />
           <section id="section-1" className="container-lg">
             <h1>Section Content 1</h1>
           </section>

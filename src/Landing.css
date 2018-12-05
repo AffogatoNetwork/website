@@ -1,6 +1,6 @@
 .asymmetric {
   position: relative;
-  background-color:#7CCBF2;
+  background-color: #f9a72c;
   min-height: 400px;
 }
 
@@ -11,7 +11,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #7CCBF2;
+  background-color: #f9a72c;
   transform-origin: bottom right;
   transform: skewY(-12deg);
   z-index: -10;
@@ -25,7 +25,7 @@
 
 #section-2 {
   position: relative;
-  background-color:#7CCBF2;
+  background-color:#f9a72c;
   min-height: 400px;
 }
 
@@ -36,7 +36,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #7CCBF2;
+  background-color: #f9a72c;
   transform-origin: bottom left;
   transform: skewY(-12deg);
   z-index: -10;
@@ -50,7 +50,7 @@
 
 footer {
   position: relative;
-  background-color:#7CCBF2;
+  background-color:#f9a72c;
   min-height: 400px;
 }
 
@@ -61,23 +61,73 @@ footer::before {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #7CCBF2;
+  background-color: #f9a72c;
   transform-origin: bottom left;
   transform: skewY(-12deg);
   z-index: -10;
 }
 
 
-h1 {
-  margin: 0;
-  padding: 100px 0;
-  font: 44px "Arial";
-  text-align: center;
+.btn-primary {
+  color: #fff;
+    background-color: #332211!important;
+    border-color: #332211!important;
+}
+.btn-primary:hover {
+  color: #fff;
+    background-color: #774411!important;
+    border-color: #774411!important;
 }
 
 header h1 {
+  padding-top: 100px;
   position: relative;
   color: white;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+}
+
+.container-lg {
+  max-width: 1040px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.nav{
+  height: 100px;
+  padding-top:30px;
+}
+
+.nav-item a{
+  color: white;
+}
+
+.nav-item a:hover {
+  color: hsla(0,0%,100%,.5);
+}
+
+.nav-item .logo{
+  height: 25px;
+}
+
+.description{
+  line-height: 28px;
+  color:white;
+  font-weight: 500;
+}
+
+.landing-phone{
+  transform: rotate(0deg);
+  position: absolute;
+}
+
+.call-to-action{
+  position: relative;
+  top:50px;
+}
+.call-to-action button{
+  font-weight: bold;
+  padding-top:8px;
+  padding-bottom:8px;
 }
 /*
 #section-1 {
