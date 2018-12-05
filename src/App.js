@@ -16,7 +16,7 @@ class App extends Component {
                 <Nav className="col-8 offset-md-1 ">
                   <NavItem>
                     <NavLink href="#">
-                      <img src={icon} className="mr-2 logo" />
+                      <img src={icon} className="mr-2 logo" alt="logo" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -56,7 +56,11 @@ class App extends Component {
                   </div>
                 </div>
                 <div className="col-lg-4 d-none d-lg-block ">
-                  <img src={phone} className="img-fluid landing-phone" />
+                  <img
+                    src={phone}
+                    className="img-fluid landing-phone"
+                    alt="iphone preview"
+                  />
                 </div>
               </div>
             </div>
