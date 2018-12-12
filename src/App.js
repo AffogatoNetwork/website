@@ -39,20 +39,25 @@ class App extends Component {
             </div>
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-6 col-sm-12 offset-md-1 no-gutters">
-                  <h1 class="col-lg-12">
+                <div className="col-lg-6 col-sm-11 offset-md-1 no-gutters">
+                  <h1 className="col-lg-12">
                     The coffee economy on the Blockchain
                   </h1>
-                  <p class="col-lg-10 mt-4 description">
+                  <p className="col-lg-10 mt-4 description">
                     Body, dark, galão pumpkin spice, in, galão, in a iced java
                     chicory. Ristretto, cortado id brewed wings acerbic java
                     kopi-luwak bar and latte. Coffee caffeine iced aftertaste
                     milk barista frappuccino.
                   </p>
-                  <div className="call-to-action">
-                    <button type="submit" className="col-5 btn btn-primary">
+                  <div className="call-to-action ">
+                    <a
+                      href="https://www.getdrip.com/forms/729610656/submissions/new"
+                      target="_blank"
+                      className="col-md-5 col-lg-5 btn btn-primary"
+                      rel="noopener noreferrer"
+                    >
                       Get the latest news
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div className="col-lg-4 d-none d-lg-block ">
