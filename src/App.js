@@ -263,93 +263,127 @@ class App extends Component {
           </section>
         </section>
         <section id="secondary">
-          <div className="cols container-lg text-center">
-            <section id="section-3">
-              <h1>Meet the Team</h1>
-              <p className="mt-4">
-                We’ve hired a number of talented individuals. Many of them have
-                contributed previously to ENS in a voluntary capacity.
-              </p>
-              <div className="row justify-content-center team-wrapper">
-                <a class="member col-4 " href="#">
-                  <div class="img-wrapper">
-                    <img
-                      class="hover rounded-circle"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
-                    />
+          <div className="text-center">
+            <section id="section-3" className="">
+              <div id="partners-logos" className="col-8 offset-2">
+                <div className="row justify-content-center">
+                  <h1 className="col-12">Partners</h1>
+                  <p className="mt-2">
+                    We’ve hired a number of talented individuals. Many of them
+                    have contributed previously to ENS in a voluntary capacity.
+                  </p>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                  <div class="details">
-                    <h3>Nick Johnson</h3>
-                    <p>Lead Developer</p>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                </a>
-                <a class="member col-4 " href="#">
-                  <div class="img-wrapper">
-                    <img
-                      class="hover rounded-circle"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
-                    />
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                  <div class="details">
-                    <h3>Nick Johnson</h3>
-                    <p>Lead Developer</p>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                </a>
-                <a class="member col-4 " href="#">
-                  <div class="img-wrapper">
-                    <img
-                      class="hover rounded-circle"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
-                    />
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                  <div class="details">
-                    <h3>Nick Johnson</h3>
-                    <p>Lead Developer</p>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
                   </div>
-                </a>
-                <a class="member col-4" href="#">
-                  <div class="img-wrapper">
-                    <img
-                      class="hover rounded-circle"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
-                    />
+                </div>
+              </div>
+              <div id="team-divider" />
+              <div id="team" className="col-8 offset-2">
+                <div className="row justify-content-center">
+                  <h1>Meet the Team</h1>
+                  <p className="mt-4">
+                    We’ve hired a number of talented individuals. Many of them
+                    have contributed previously to ENS in a voluntary capacity.
+                  </p>
+                  <div className="row justify-content-center team-wrapper">
+                    <a className="member col-4 " href="#">
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Nick Johnson</h3>
+                        <p>Lead Developer</p>
+                      </div>
+                    </a>
+                    <a className="member col-4 " href="#">
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Nick Johnson</h3>
+                        <p>Lead Developer</p>
+                      </div>
+                    </a>
+                    <a className="member col-4 " href="#">
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Nick Johnson</h3>
+                        <p>Lead Developer</p>
+                      </div>
+                    </a>
+                    <a className="member col-4" href="#">
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Nick Johnson</h3>
+                        <p>Lead Developer</p>
+                      </div>
+                    </a>
+                    <a className="member col-4" href="#">
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Nick Johnson</h3>
+                        <p>Lead Developer</p>
+                      </div>
+                    </a>
                   </div>
-                  <div class="details">
-                    <h3>Nick Johnson</h3>
-                    <p>Lead Developer</p>
-                  </div>
-                </a>
-                <a class="member col-4" href="#">
-                  <div class="img-wrapper">
-                    <img
-                      class="hover rounded-circle"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
-                    />
-                  </div>
-                  <div class="details">
-                    <h3>Nick Johnson</h3>
-                    <p>Lead Developer</p>
-                  </div>
-                </a>
+                </div>
               </div>
 
               <div id="press-logos" className="row justify-content-center">
                 <h1 className="col-12">As seen in the press</h1>
 
-                <div class="img-wrapper col-3">
+                <div className="img-wrapper col-3">
                   <img src="https://via.placeholder.com/180x60" />
                 </div>
-                <div class="img-wrapper col-3">
+                <div className="img-wrapper col-3">
                   <img src="https://via.placeholder.com/180x60" />
                 </div>
-                <div class="img-wrapper col-3">
+                <div className="img-wrapper col-3">
                   <img src="https://via.placeholder.com/180x60" />
                 </div>
               </div>
             </section>
           </div>
         </section>
-        <footer />
+        <footer className="clearfix pt-1">
+          <div id="footer-divider" />
+        </footer>
       </div>
     );
   }

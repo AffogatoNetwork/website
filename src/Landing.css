@@ -67,8 +67,29 @@ body a:hover{
   margin-top:80px;
 }
 
+
+
+#partners-logos p{
+  margin-bottom: 40px;
+}
+
+#partners-logos img{
+  margin-bottom: 40px;
+}
+
+#team {
+
+ 
+}
+
+#team-divider{
+  border-top: 2px dashed #f9a72c91;
+  margin-top:50px;
+  padding-top:70px;
+}
+
 .team-wrapper{
-  margin-top:70px;
+  margin-top:40px;
 }
 
 .team-wrapper .hover{
@@ -83,13 +104,18 @@ body a:hover{
 }
 
 #press-logos {
-  border-top: 1px solid #f9a72c;
-  margin-top:70px;
+  margin-top:20px;
   padding-top:70px;
 }
 
 #press-logos h1{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+#footer-divider{
+  border-top: 2px solid #774411;
+  margin-top:170px;
+
 }
 
 
