@@ -12,11 +12,10 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  CardSubtitle,
   Button
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 import Steps, { Step } from "rc-steps";
 import "rc-steps/assets/index.css";
@@ -366,17 +365,40 @@ class App extends Component {
               </div>
 
               <div id="press-logos" className="row justify-content-center">
-                <h1 className="col-12">As seen in the press</h1>
-
-                <div className="img-wrapper col-3">
-                  <img src="https://via.placeholder.com/180x60" />
-                </div>
-                <div className="img-wrapper col-3">
-                  <img src="https://via.placeholder.com/180x60" />
-                </div>
-                <div className="img-wrapper col-3">
-                  <img src="https://via.placeholder.com/180x60" />
-                </div>
+                <Card className="col-4 blog">
+                  <CardBody>
+                    <h3>
+                      Explore the Blog{" "}
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        size="xs"
+                        aria-hidden="true"
+                      />
+                    </h3>
+                    <p className="px-4">
+                      Use SQL to explore your business’ payments and revenue
+                      data, build and run custom reports, get insights, and
+                      more.
+                    </p>
+                  </CardBody>
+                </Card>
+                <Card className="col-4 press ml-5">
+                  <CardBody>
+                    <h3>
+                      What the news say about us{" "}
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        size="xs"
+                        aria-hidden="true"
+                      />
+                    </h3>
+                    <p className="px-4">
+                      Use SQL to explore your business’ payments and revenue
+                      data, build and run custom reports, get insights, and
+                      more.
+                    </p>
+                  </CardBody>
+                </Card>
               </div>
             </section>
           </div>

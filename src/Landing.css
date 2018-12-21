@@ -68,7 +68,6 @@ body a:hover{
 }
 
 
-
 #partners-logos p{
   margin-bottom: 40px;
 }
@@ -77,10 +76,7 @@ body a:hover{
   margin-bottom: 40px;
 }
 
-#team {
 
- 
-}
 
 #team-divider{
   border-top: 2px dashed #f9a72c91;
@@ -101,6 +97,17 @@ body a:hover{
   background: -webkit-linear-gradient(left top, #774411 0%, #332211 100%);
   border-radius: 1000px;
   padding: 10px;
+}
+
+.blog{
+  background: url('./images/blog.png') no-repeat;
+  background-position: left center; 
+}
+
+
+.press{ 
+  background: url('./images/press.png') no-repeat;
+  background-position: left center; 
 }
 
 #press-logos {
