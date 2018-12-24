@@ -364,41 +364,61 @@ class App extends Component {
                 </div>
               </div>
 
-              <div id="press-logos" className="row justify-content-center">
-                <Card className="col-4 blog">
-                  <CardBody>
-                    <h3>
-                      Explore the Blog{" "}
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        size="xs"
-                        aria-hidden="true"
-                      />
-                    </h3>
-                    <p className="px-4">
-                      Use SQL to explore your business’ payments and revenue
-                      data, build and run custom reports, get insights, and
-                      more.
-                    </p>
-                  </CardBody>
-                </Card>
-                <Card className="col-4 press ml-5">
-                  <CardBody>
-                    <h3>
-                      What the news say about us{" "}
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        size="xs"
-                        aria-hidden="true"
-                      />
-                    </h3>
-                    <p className="px-4">
-                      Use SQL to explore your business’ payments and revenue
-                      data, build and run custom reports, get insights, and
-                      more.
-                    </p>
-                  </CardBody>
-                </Card>
+              <div id="press-section" className="col-12">
+                <div className="row justify-content-center pb-5">
+                  <Card className="col-4 blog">
+                    <CardBody>
+                      <h3 className="mt-3 mb-3">
+                        Explore the Blog{" "}
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          size="xs"
+                          aria-hidden="true"
+                        />
+                      </h3>
+                      <p className="">
+                        Use SQL to explore your business’ payments and revenue
+                        data, build and run custom reports, get insights, and
+                        more.
+                      </p>
+                    </CardBody>
+                  </Card>
+                  <Card className="col-4 press ml-5">
+                    <CardBody className="">
+                      <h3 className="mt-3 mb-3">
+                        What the news say about us{" "}
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          size="xs"
+                          aria-hidden="true"
+                        />
+                      </h3>
+                      <p className="">
+                        Use SQL to explore your business’ payments and revenue
+                        data, build and run custom reports, get insights, and
+                        more.
+                      </p>
+                    </CardBody>
+                  </Card>
+                </div>
+                <div className="text-left col-8 offset-2 mt-5">
+                  <div className="row">
+                    <div className="col-4">
+                      <h3>Ready to get started?</h3>
+                      <h4>Get in touch or create an account.</h4>
+                    </div>
+                    <div className="col-6 bottom-call-to-action">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class=" col-6 btn btn-primary mt-2"
+                        rel="noopener noreferrer"
+                      >
+                        Contact Sales
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           </div>

@@ -76,8 +76,6 @@ body a:hover{
   margin-bottom: 40px;
 }
 
-
-
 #team-divider{
   border-top: 2px dashed #f9a72c91;
   margin-top:50px;
@@ -87,7 +85,7 @@ body a:hover{
 .team-wrapper{
   margin-top:40px;
 }
-
+/* TODO: add animation here*/
 .team-wrapper .hover{
   border-radius: 1000px;
   padding: 10px;
@@ -101,21 +99,46 @@ body a:hover{
 
 .blog{
   background: url('./images/blog.png') no-repeat;
-  background-position: left center; 
+  background-position: 10px center; 
+  text-align: left;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
+.blog:hover, .press:hover{
+  -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3);
+  box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3);
+  color: #32325d!important;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  cursor: pointer;
+
+
+}
+
+.blog p, .blog h3, .press p, .press h3{
+  padding-left: 50px;
+  padding-right: 30px;
+}
 
 .press{ 
   background: url('./images/press.png') no-repeat;
-  background-position: left center; 
+  background-position: 10px center; 
+  text-align: left;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-#press-logos {
+#press-section {
   margin-top:20px;
   padding-top:70px;
 }
 
-#press-logos h1{
+#press-section h1{
   margin-bottom: 30px;
 }
 
@@ -125,11 +148,10 @@ body a:hover{
 
 }
 
-
 footer {
   position: relative;
   background-color:#f9a72c;
-  min-height: 400px;
+  min-height: 430px;
 }
 
 footer::before {
@@ -137,7 +159,7 @@ footer::before {
   content: "";
   width: 100%;
   height: 100%;
-  top: 0;
+  top: -50px;
   left: 0;
   background-color: #f9a72c;
   transform-origin: bottom left;
@@ -211,6 +233,12 @@ header h1 {
   padding-bottom:8px;
 }
 
+
+.bottom-call-to-action a{
+  font-weight: bold;
+  padding-top:8px;
+  padding-bottom:8px;
+}
 /* Steps*/
 
 .rc-steps-item-title h5{
