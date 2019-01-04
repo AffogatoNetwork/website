@@ -264,34 +264,6 @@ class App extends Component {
         <section id="secondary">
           <div className="text-center">
             <section id="section-3" className="">
-              <div id="partners-logos" className="col-8 offset-2">
-                <div className="row justify-content-center">
-                  <h1 className="col-12">Partners</h1>
-                  <p className="mt-2">
-                    We’ve hired a number of talented individuals. Many of them
-                    have contributed previously to ENS in a voluntary capacity.
-                  </p>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                  <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
-                  </div>
-                </div>
-              </div>
-              <div id="team-divider" />
               <div id="team" className="col-8 offset-2">
                 <div className="row justify-content-center">
                   <h1>Meet the Team</h1>
@@ -364,6 +336,35 @@ class App extends Component {
                 </div>
               </div>
 
+              <div id="team-divider" />
+              <div id="partners-logos" className="col-8 offset-2">
+                <div className="row justify-content-center">
+                  <h1 className="col-12">Partners</h1>
+                  <p className="mt-2">
+                    We’ve hired a number of talented individuals. Many of them
+                    have contributed previously to ENS in a voluntary capacity.
+                  </p>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <img src="https://via.placeholder.com/180x60" />
+                  </div>
+                </div>
+              </div>
+
               <div id="press-section" className="col-12">
                 <div className="row justify-content-center pb-5">
                   <Card className="col-4 blog">
@@ -401,17 +402,17 @@ class App extends Component {
                     </CardBody>
                   </Card>
                 </div>
-                <div className="text-left col-8 offset-2 mt-5">
-                  <div className="row">
+                <div className="text-left col-8 offset-2">
+                  <div className="row justify-content-center">
                     <div className="col-4">
                       <h3>Ready to get started?</h3>
                       <h4>Get in touch or create an account.</h4>
                     </div>
-                    <div className="col-6 bottom-call-to-action">
+                    <div className="col-4 bottom-call-to-action">
                       <a
                         href="#"
                         target="_blank"
-                        class=" col-6 btn btn-primary mt-2"
+                        class=" col-12 btn btn-primary mt-2"
                         rel="noopener noreferrer"
                       >
                         Contact Sales
@@ -423,9 +424,6 @@ class App extends Component {
             </section>
           </div>
         </section>
-        <footer className="clearfix pt-1">
-          <div id="footer-divider" />
-        </footer>
       </div>
     );
   }
