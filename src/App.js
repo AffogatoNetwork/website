@@ -15,7 +15,12 @@ import {
   Button
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  faUser,
+  faArrowRight,
+  faQrcode
+} from "@fortawesome/free-solid-svg-icons";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 import Steps, { Step } from "rc-steps";
 import "rc-steps/assets/index.css";
@@ -36,19 +41,19 @@ class App extends Component {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Link</NavLink>
+                    <NavLink href="#">Use Cases</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Link</NavLink>
+                    <NavLink href="#">Team</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Link</NavLink>
+                    <NavLink href="#">Partners</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Link</NavLink>
+                    <NavLink href="#">Blog</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Link</NavLink>
+                    <NavLink href="#">News</NavLink>
                   </NavItem>
                 </Nav>
               </div>
@@ -60,10 +65,10 @@ class App extends Component {
                     The Coffee Economy on the Blockchain
                   </h1>
                   <p className="col-lg-10 mt-4 description">
-                    Body, dark, galão pumpkin spice, in, galão, in a iced java
-                    chicory. Ristretto, cortado id brewed wings acerbic java
-                    kopi-luwak bar and latte. Coffee caffeine iced aftertaste
-                    milk barista frappuccino.
+                    The coffee value chain is fueled by untrust and lack of
+                    financing. We are using Smart contracts on Ethereum
+                    blockchain to create trust and new business models for the
+                    actors in the value chain.
                   </p>
                   <div className="call-to-action ">
                     <a
@@ -91,27 +96,28 @@ class App extends Component {
           <section id="section-1" className="container-fluid">
             <div className="row">
               <div className="col-lg-6 col-sm-11 offset-md-1 no-gutters">
-                <h1 className="col-lg-12">Early User Research Findings</h1>
+                <h1 className="col-lg-12">How it works?</h1>
                 <div className="row">
                   <div className="col-lg-10 mt-4 ">
                     <Steps direction="vertical">
                       <Steps.Step
                         title={
                           <div>
-                            <FontAwesomeIcon
-                              icon={faEthereum}
-                              size="2x"
-                              aria-hidden="true"
-                            />
-                            <h5 className="ml-2">Creates an Account.</h5>
+                            <h5 className="">Creates an Account.</h5>
                           </div>
+                        }
+                        icon={
+                          <FontAwesomeIcon
+                            icon={faUser}
+                            size="md"
+                            aria-hidden="true"
+                          />
                         }
                         description={
                           <div>
                             <p className="font-subheader">
-                              Fund a well specified issue on your Github repo
-                              which is a good candidate for external
-                              contribution.
+                              Producer creates an account on the Affogato
+                              Platform.
                             </p>
                           </div>
                         }
@@ -120,20 +126,22 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <FontAwesomeIcon
-                              icon={faEthereum}
-                              size="2x"
-                              aria-hidden="true"
-                            />
-                            <h5 className="ml-2">Add information.</h5>
+                            <h5 className="">Adds information.</h5>
                           </div>
+                        }
+                        icon={
+                          <FontAwesomeIcon
+                            icon={faQrcode}
+                            size="md"
+                            aria-hidden="true"
+                          />
                         }
                         description={
                           <div>
                             <p className="font-subheader">
-                              Fund a well specified issue on your Github repo
-                              which is a good candidate for external
-                              contribution.
+                              Farmer uses the platform to add in the Blockchain
+                              information regards the farms and coffee batches.
+                              An unique QR Code is Generated per batch.
                             </p>
                           </div>
                         }
@@ -142,15 +150,17 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <FontAwesomeIcon
-                              icon={faEthereum}
-                              size="2x"
-                              aria-hidden="true"
-                            />
-                            <h5 className="ml-2">
-                              Adds the unique QR to their coffee bags.
+                            <h5 className="">
+                              Actors interact with coffee bags.
                             </h5>
                           </div>
+                        }
+                        icon={
+                          <FontAwesomeIcon
+                            icon={faCoffee}
+                            size="sm"
+                            aria-hidden="true"
+                          />
                         }
                         description={
                           <div>
@@ -167,15 +177,15 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <FontAwesomeIcon
-                              icon={faEthereum}
-                              size="2x"
-                              aria-hidden="true"
-                            />
-                            <h5 className="ml-2">
-                              Connects to business models.
-                            </h5>
+                            <h5 className="">Connects to business models.</h5>
                           </div>
+                        }
+                        icon={
+                          <FontAwesomeIcon
+                            icon={faEthereum}
+                            size="md"
+                            aria-hidden="true"
+                          />
                         }
                         description={
                           <div>
