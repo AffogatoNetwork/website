@@ -3,6 +3,9 @@ import "./Landing.css";
 import "./App.css";
 import icon from "./images/logo-white.png";
 import phone from "./images/phone.svg";
+import case1 from "./images/case1.jpg";
+import case2 from "./images/case2.jpg";
+import case3 from "./images/case3.jpg";
 import {
   Nav,
   NavItem,
@@ -22,7 +25,7 @@ import {
   faQrcode
 } from "@fortawesome/free-solid-svg-icons";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
-import Steps, { Step } from "rc-steps";
+import Steps from "rc-steps";
 import "rc-steps/assets/index.css";
 import "rc-steps/assets/iconfont.css";
 
@@ -103,7 +106,7 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <h5 className="">Creates an Account.</h5>
+                            <h5 className="">Create an Account.</h5>
                           </div>
                         }
                         icon={
@@ -116,8 +119,8 @@ class App extends Component {
                         description={
                           <div>
                             <p className="font-subheader">
-                              Producer creates an account on the Affogato
-                              Platform.
+                              Producers and different actors of the Coffee value
+                              chain creates an account on the Affogato Platform.
                             </p>
                           </div>
                         }
@@ -126,7 +129,7 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <h5 className="">Adds information.</h5>
+                            <h5 className="">Add Information.</h5>
                           </div>
                         }
                         icon={
@@ -140,8 +143,8 @@ class App extends Component {
                           <div>
                             <p className="font-subheader">
                               Farmer uses the platform to add in the Blockchain
-                              information regards the farms and coffee batches.
-                              An unique QR Code is Generated per batch.
+                              information regards the farms and their coffee
+                              batches. An unique QR Code is Generated per batch.
                             </p>
                           </div>
                         }
@@ -150,9 +153,7 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <h5 className="">
-                              Actors interact with coffee bags.
-                            </h5>
+                            <h5 className="">Interact with Coffee Bags.</h5>
                           </div>
                         }
                         icon={
@@ -165,9 +166,8 @@ class App extends Component {
                         description={
                           <div>
                             <p className="font-subheader">
-                              Fund a well specified issue on your Github repo
-                              which is a good candidate for external
-                              contribution.
+                              Different actors can interact with the coffee
+                              batches in the blockchain adding more value.
                             </p>
                           </div>
                         }
@@ -177,7 +177,7 @@ class App extends Component {
                       <Steps.Step
                         title={
                           <div>
-                            <h5 className="">Connects to business models.</h5>
+                            <h5 className="">Connect to Business Models.</h5>
                           </div>
                         }
                         icon={
@@ -190,9 +190,10 @@ class App extends Component {
                         description={
                           <div>
                             <p className="font-subheader">
-                              Fund a well specified issue on your Github repo
-                              which is a good candidate for external
-                              contribution.
+                              The Blockchain allows the implementation of new
+                              Business Models for the actors in the coffee value
+                              chain. Subscriptions, Crowdfunding, Tipping are
+                              now available for farmers.
                             </p>
                           </div>
                         }
@@ -212,58 +213,46 @@ class App extends Component {
               <div className="row justify-content-center pt-4">
                 <div className="col-lg-3">
                   <Card className="text-center">
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-                      alt="Card image cap"
-                    />
+                    <CardImg top width="100%" src={case1} alt="Use Case 1" />
                     <CardBody>
-                      <CardTitle>Card title</CardTitle>
+                      <CardTitle>
+                        <b>Proof of Quality</b>
+                      </CardTitle>
 
                       <CardText>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button className="btn-primary">Button</Button>
                     </CardBody>
                   </Card>
                 </div>
                 <div className="col-lg-3">
                   <Card className="text-center">
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-                      alt="Card image cap"
-                    />
+                    <CardImg top width="100%" src={case2} alt="Use Case 2" />
                     <CardBody>
-                      <CardTitle>Card title</CardTitle>
+                      <CardTitle>
+                        <b>Stream Income</b>
+                      </CardTitle>
 
                       <CardText>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button className="btn-primary">Button</Button>
                     </CardBody>
                   </Card>
                 </div>
                 <div className="col-lg-3">
                   <Card className="text-center">
-                    <CardImg
-                      top
-                      width="100%"
-                      src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-                      alt="Card image cap"
-                    />
+                    <CardImg top width="100%" src={case3} alt="Use Case 3" />
                     <CardBody>
-                      <CardTitle>Card title</CardTitle>
+                      <CardTitle>
+                        <b>Farm to Cup</b>
+                      </CardTitle>
 
                       <CardText>
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </CardText>
-                      <Button className="btn-primary">Button</Button>
                     </CardBody>
                   </Card>
                 </div>

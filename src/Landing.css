@@ -60,6 +60,9 @@ body a:hover{
   z-index: -10;
 }
 
+#section-2 .card img{
+  max-height: 150px;object-fit: cover
+}
 
 #section-3 {
   position: relative;
@@ -246,7 +249,6 @@ header h1 {
   padding-top:8px;
   padding-bottom:8px;
 }
-
 
 .bottom-call-to-action a{
   font-weight: bold;
