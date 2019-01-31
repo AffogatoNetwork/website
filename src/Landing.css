@@ -1,3 +1,8 @@
+body
+{
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+}
+
 p,a,a.btn{
   font-size: 1.2em;
 }
@@ -111,6 +116,7 @@ body a:hover{
 .blog{
   background: url('./images/blog.png') no-repeat;
   background-position: 10px center; 
+  background-color: white;
   text-align: left;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
@@ -136,6 +142,7 @@ body a:hover{
 
 .press{ 
   background: url('./images/press.png') no-repeat;
+  background-color: white;
   background-position: 10px center; 
   text-align: left;
   -webkit-transition: 0.2s ease-in-out;
@@ -313,6 +320,96 @@ div.rc-steps-item-process .rc-steps-item-icon {
   border-color: #f9a72c;
 }
 
+@media (min-width: 0) {
+  .press{
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px
+  }
+
+  .blog{
+    margin-left:20px;
+    margin-right:20px
+  }
+
+  .press h3, .press p, .blog h3, .blog p  {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  header h1{
+    padding-top: 0px;
+  }
+  
+  .call-to-action{
+    top: 10px;
+  }
+
+  .nav-item{
+    display: none
+  }
+
+  .logo-li{
+    display: block
+  }
+
+  #section-1{
+    margin-top: 100px;
+  }
+
+  #section-2 h1 {
+    padding-top: 50px;
+  }
+
+  #section-2 .card {
+    margin-bottom: 40px;
+  }
+
+ }
+
+ @media (min-width: 576px) {  
+
+  header h1{
+    padding-top: 100px;
+  }
+
+  .blog{
+    margin-left:0;
+    margin-right:0
+  }
+
+  .press{
+    margin-top:0px;
+    margin-left:3rem;
+    margin-right: 0px;
+  }
+
+  .press h3, .press p, .blog h3, .blog p{
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
+  .call-to-action{
+    top: 50px;
+  }
+
+  .nav-item{
+    display: inherit;
+  }
+
+  #section-1{
+    margin-top: 400px;
+  }
+
+  #section-2 h1 {
+    padding-top: 0px;
+  }
+
+  #section-2 .card {
+    margin-bottom: 0px;
+  }
+  
+}
 /*
 #section-1 {
   overflow: hidden;

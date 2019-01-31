@@ -82,8 +82,8 @@ class App extends Component {
           <header>
             <div className="container-fluid ">
               <div className="row">
-                <Nav className="col-8 offset-md-1 ">
-                  <NavItem>
+                <Nav className="col-sm-8 col-xs-12 offset-md-1 ">
+                  <NavItem className="logo-li">
                     <NavLink>
                       <img src={icon} className="mr-2 logo" alt="logo" />
                     </NavLink>
@@ -352,7 +352,7 @@ class App extends Component {
                   </p>
                   <div className="row justify-content-center team-wrapper">
                     <a
-                      className="member col-4 "
+                      className="member col-sm-4 col-xs-12"
                       href="https://twitter.com/crisgarner"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -376,7 +376,7 @@ class App extends Component {
                       </div>
                     </a>
                     <a
-                      className="member col-4 "
+                      className="member col-sm-4 col-xs-12"
                       href="https://www.linkedin.com/in/rmudgett/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -400,7 +400,7 @@ class App extends Component {
                       </div>
                     </a>
                     <a
-                      className="member col-4 "
+                      className="member col-sm-4 col-xs-12"
                       href="https://github.com/Struka9"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -421,7 +421,7 @@ class App extends Component {
                       </div>
                     </a>
                     <a
-                      className="member col-4"
+                      className="member col-sm-4 col-xs-12"
                       href="https://twitter.com/nestor_sct"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -442,7 +442,7 @@ class App extends Component {
                       </div>
                     </a>
                     <a
-                      className="member col-4 "
+                      className="member col-sm-4 col-xs-12"
                       href="https://www.linkedin.com/in/hn-danielpineda"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -477,7 +477,7 @@ class App extends Component {
                     Affogato Network is working together with these awesome
                     partners.
                   </p>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="http://www.docafemarcala.org/"
                       target="_blank"
@@ -486,7 +486,7 @@ class App extends Component {
                       <img src={doMarcala} alt="DO Marcala" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="https://www.cafenativo.net/"
                       target="_blank"
@@ -495,7 +495,7 @@ class App extends Component {
                       <img src={nativo} alt="Cafe Nativo" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="http://galeano.coffee/home-page/"
                       target="_blank"
@@ -504,7 +504,7 @@ class App extends Component {
                       <img src={galeano} alt="Galeano" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="https://adelantecoffee.com/"
                       target="_blank"
@@ -513,7 +513,7 @@ class App extends Component {
                       <img src={adelante} alt="Adelante Coffee" />
                     </a>
                   </div>{" "}
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="https://www.iadb.org/en"
                       target="_blank"
@@ -522,7 +522,7 @@ class App extends Component {
                       <img src={bid} alt="BID" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="https://www.rainforest-alliance.org/"
                       target="_blank"
@@ -531,7 +531,7 @@ class App extends Component {
                       <img src={rainforest} alt="Rainforest Alliance" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="http://www.beneficiolasbrisas.com/"
                       target="_blank"
@@ -540,7 +540,7 @@ class App extends Component {
                       <img src={proexo} alt="Proexo" />
                     </a>
                   </div>
-                  <div className="img-wrapper col-3">
+                  <div className="img-wrapper col-sm-3 col-xs-12">
                     <a
                       href="http://tripartito.coffee/"
                       target="_blank"
@@ -554,7 +554,10 @@ class App extends Component {
 
               <div id="press-section" className="col-12">
                 <div className="row justify-content-center pb-5">
-                  <Card className="col-4 blog" onClick={this.blogLink}>
+                  <Card
+                    className="col-sm-4 col-xs-12 blog"
+                    onClick={this.blogLink}
+                  >
                     <CardBody>
                       <h3 className="mt-3 mb-3">
                         Explore the Blog{" "}
@@ -569,10 +572,13 @@ class App extends Component {
                       </p>
                     </CardBody>
                   </Card>
-                  <Card className="col-4 press ml-5" onClick={this.pressLink}>
+                  <Card
+                    className="col-sm-4 col-xs-12 press "
+                    onClick={this.pressLink}
+                  >
                     <CardBody className="">
                       <h3 className="mt-3 mb-3">
-                        Press Room
+                        Press Room{" "}
                         <FontAwesomeIcon
                           icon={faArrowRight}
                           size="xs"
@@ -585,13 +591,13 @@ class App extends Component {
                     </CardBody>
                   </Card>
                 </div>
-                <div className="text-left col-8 offset-2">
+                <div className="text-left col-sm-8 offset-sm-2 col-xs-12">
                   <div className="row justify-content-center">
-                    <div className="col-4">
+                    <div className="col-sm-4 col-xs-12">
                       <h3>Want to learn more?</h3>
                       <h4>Get in touch with the team.</h4>
                     </div>
-                    <div className="col-4 bottom-call-to-action">
+                    <div className="col-sm-4 col-xs-12 bottom-call-to-action">
                       <a
                         href="mailto:info@affogatonetwork.com"
                         target="_blank"
