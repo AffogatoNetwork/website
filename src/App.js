@@ -300,12 +300,10 @@ class App extends Component {
                     <CardImg top width="100%" src={case1} alt="Use Case 1" />
                     <CardBody>
                       <h4>Proof of Quality</h4>
-
                       <p>
-                        Affogato uses Ethereum Smartcontracts to give
-                        transparency an a proof of the quality of the coffee
-                        beans giving more trust to the different actors in the
-                        value chain.
+                        Affogato uses Smart contracts to give transparency and
+                        proof of the quality of the coffee beans giving more
+                        trust to the different actors in the value chain.
                       </p>
                     </CardBody>
                   </Card>
@@ -315,10 +313,10 @@ class App extends Component {
                     <CardImg top width="100%" src={case2} alt="Use Case 2" />
                     <CardBody>
                       <h4>New Business Models</h4>
-
                       <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Affogato allows the creation of decentralized finances
+                        and new business models such as tips, crowdfunding, and
+                        pre-sales, helping the producers to earn more money.
                       </CardText>
                     </CardBody>
                   </Card>
@@ -328,10 +326,11 @@ class App extends Component {
                     <CardImg top width="100%" src={case3} alt="Use Case 3" />
                     <CardBody>
                       <h4>Farm to Cup</h4>
-
                       <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Producers that implements Affogato in their process are
+                        able to give traceability to their coffee through all
+                        the coffee chain, allowing the consumers to learn where
+                        their coffee comes from.
                       </CardText>
                     </CardBody>
                   </Card>
