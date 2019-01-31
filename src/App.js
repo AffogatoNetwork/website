@@ -1,11 +1,25 @@
 import React, { Component } from "react";
+import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 import "./Landing.css";
 import "./App.css";
 import icon from "./images/logo-white.png";
+import cristian from "./images/cristian.jpg";
+import daniel from "./images/daniel.jpg";
+import robert from "./images/robert.jpeg";
+import oscar from "./images/oscar.jpeg";
+import nestor from "./images/nestor.jpeg";
 import phone from "./images/phone.svg";
 import case1 from "./images/case1.jpg";
 import case2 from "./images/case2.jpg";
 import case3 from "./images/case3.jpg";
+import proexo from "./images/proexo.png";
+import doMarcala from "./images/logo_DOMarcala.jpg";
+import nativo from "./images/logo_Nativo.jpg";
+import adelante from "./images/logo_Adelante.png";
+import galeano from "./images/galeano.jpg";
+import bid from "./images/bid.png";
+import rainforest from "./images/rainforest.png";
+import tripartito from "./images/tripartito.png";
 import {
   Nav,
   NavItem,
@@ -13,9 +27,7 @@ import {
   Card,
   CardImg,
   CardText,
-  CardBody,
-  CardTitle,
-  Button
+  CardBody
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,6 +42,39 @@ import "rc-steps/assets/index.css";
 import "rc-steps/assets/iconfont.css";
 
 class App extends Component {
+  componentDidMount() {
+    Events.scrollEvent.register("begin", function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+  blogLink() {
+    window.open("http://buidlhonduras.com/tag/coffee/", "_blank");
+  }
+  pressLink() {
+    window.open("https://affogato-network.presskite.com/", "_blank");
+  }
   render() {
     return (
       <div className="wrapper">
@@ -39,24 +84,64 @@ class App extends Component {
               <div className="row">
                 <Nav className="col-8 offset-md-1 ">
                   <NavItem>
-                    <NavLink href="#">
+                    <NavLink>
                       <img src={icon} className="mr-2 logo" alt="logo" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Use Cases</NavLink>
+                    <Link
+                      className="nav-link"
+                      to="section-2"
+                      smooth={true}
+                      isDynamic={true}
+                      href="section-2"
+                    >
+                      Use Cases
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Team</NavLink>
+                    <Link
+                      className="nav-link"
+                      to="secondary"
+                      smooth={true}
+                      isDynamic={true}
+                      href="secondary"
+                    >
+                      Team
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Partners</NavLink>
+                    <Link
+                      className="nav-link"
+                      to="partners-logos"
+                      smooth={true}
+                      isDynamic={true}
+                      href="partners-logos"
+                    >
+                      Partners
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">Blog</NavLink>
+                    <Link
+                      className="nav-link"
+                      to="press-section"
+                      smooth={true}
+                      isDynamic={true}
+                      href="press-section"
+                    >
+                      Blog
+                    </Link>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">News</NavLink>
+                    <Link
+                      className="nav-link"
+                      to="press-section"
+                      smooth={true}
+                      isDynamic={true}
+                      href="press-section"
+                    >
+                      News
+                    </Link>
                   </NavItem>
                 </Nav>
               </div>
@@ -68,10 +153,9 @@ class App extends Component {
                     The Coffee Economy on the Blockchain
                   </h1>
                   <p className="col-lg-10 mt-4 description">
-                    The coffee value chain is fueled by untrust and lack of
-                    financing. We are using Smart contracts on Ethereum
-                    blockchain to create trust and new business models for the
-                    actors in the value chain.
+                    Our platform uses Smart Contracts on the Ethereum blockchain
+                    to create trust and new business models throughout the
+                    coffee value chain.
                   </p>
                   <div className="call-to-action ">
                     <a
@@ -80,7 +164,7 @@ class App extends Component {
                       className="col-md-5 col-lg-5 btn btn-primary"
                       rel="noopener noreferrer"
                     >
-                      Get the latest news
+                      Get our newsletter
                     </a>
                   </div>
                 </div>
@@ -112,7 +196,7 @@ class App extends Component {
                         icon={
                           <FontAwesomeIcon
                             icon={faUser}
-                            size="md"
+                            size="sm"
                             aria-hidden="true"
                           />
                         }
@@ -120,7 +204,7 @@ class App extends Component {
                           <div>
                             <p className="font-subheader">
                               Producers and different actors of the Coffee value
-                              chain creates an account on the Affogato Platform.
+                              chain creates an account on the Affogato platform.
                             </p>
                           </div>
                         }
@@ -135,7 +219,7 @@ class App extends Component {
                         icon={
                           <FontAwesomeIcon
                             icon={faQrcode}
-                            size="md"
+                            size="sm"
                             aria-hidden="true"
                           />
                         }
@@ -143,8 +227,8 @@ class App extends Component {
                           <div>
                             <p className="font-subheader">
                               Farmer uses the platform to add in the Blockchain
-                              information regards the farms and their coffee
-                              batches. An unique QR Code is Generated per batch.
+                              information of the farms and their coffee batches.
+                              A unique QR code is generated per batch.
                             </p>
                           </div>
                         }
@@ -167,7 +251,7 @@ class App extends Component {
                           <div>
                             <p className="font-subheader">
                               Different actors can interact with the coffee
-                              batches in the blockchain adding more value.
+                              batches in the Blockchain adding more value.
                             </p>
                           </div>
                         }
@@ -183,7 +267,7 @@ class App extends Component {
                         icon={
                           <FontAwesomeIcon
                             icon={faEthereum}
-                            size="md"
+                            size="sm"
                             aria-hidden="true"
                           />
                         }
@@ -191,9 +275,9 @@ class App extends Component {
                           <div>
                             <p className="font-subheader">
                               The Blockchain allows the implementation of new
-                              Business Models for the actors in the coffee value
-                              chain. Subscriptions, Crowdfunding, Tipping are
-                              now available for farmers.
+                              Business Models for the actors in the Coffee value
+                              chain. Subscriptions, Crowdfunding, and Tipping
+                              are now available for farmers.
                             </p>
                           </div>
                         }
@@ -211,28 +295,26 @@ class App extends Component {
                 Use Cases for Affogato
               </h1>
               <div className="row justify-content-center pt-4">
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <Card className="text-center">
                     <CardImg top width="100%" src={case1} alt="Use Case 1" />
                     <CardBody>
-                      <CardTitle>
-                        <b>Proof of Quality</b>
-                      </CardTitle>
+                      <h4>Proof of Quality</h4>
 
-                      <CardText>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </CardText>
+                      <p>
+                        Affogato uses Ethereum Smartcontracts to give
+                        transparency an a proof of the quality of the coffee
+                        beans giving more trust to the different actors in the
+                        value chain.
+                      </p>
                     </CardBody>
                   </Card>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <Card className="text-center">
                     <CardImg top width="100%" src={case2} alt="Use Case 2" />
                     <CardBody>
-                      <CardTitle>
-                        <b>Stream Income</b>
-                      </CardTitle>
+                      <h4>New Business Models</h4>
 
                       <CardText>
                         Some quick example text to build on the card title and
@@ -241,13 +323,11 @@ class App extends Component {
                     </CardBody>
                   </Card>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <Card className="text-center">
                     <CardImg top width="100%" src={case3} alt="Use Case 3" />
                     <CardBody>
-                      <CardTitle>
-                        <b>Farm to Cup</b>
-                      </CardTitle>
+                      <h4>Farm to Cup</h4>
 
                       <CardText>
                         Some quick example text to build on the card title and
@@ -267,68 +347,123 @@ class App extends Component {
                 <div className="row justify-content-center">
                   <h1>Meet the Team</h1>
                   <p className="mt-4">
-                    We’ve hired a number of talented individuals. Many of them
-                    have contributed previously to ENS in a voluntary capacity.
+                    We’ve are working with a number of talented individuals.
+                    Many of them have contributed previously to Affogato in a
+                    voluntary capacity.
                   </p>
                   <div className="row justify-content-center team-wrapper">
-                    <a className="member col-4 " href="#">
+                    <a
+                      className="member col-4 "
+                      href="https://twitter.com/crisgarner"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="img-wrapper">
                         <img
                           className="hover rounded-circle"
-                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                          src={cristian}
+                          alt="Cristian"
                         />
                       </div>
                       <div className="details">
-                        <h3>Nick Johnson</h3>
-                        <p>Lead Developer</p>
+                        <h3>Cristian Espinoza</h3>
+                        <p>Team Lead</p>
+                        <small>
+                          <p>
+                            ConsenSys Alumni, #BUIDL Ambassador Blockchain
+                            Engineer
+                          </p>
+                        </small>
                       </div>
                     </a>
-                    <a className="member col-4 " href="#">
+                    <a
+                      className="member col-4 "
+                      href="https://www.linkedin.com/in/rmudgett/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="img-wrapper">
                         <img
                           className="hover rounded-circle"
-                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                          src={robert}
+                          alt="Robert"
                         />
                       </div>
                       <div className="details">
-                        <h3>Nick Johnson</h3>
-                        <p>Lead Developer</p>
+                        <h3>Robert Mudgett</h3>
+                        <p>Team Lead</p>
+                        <small>
+                          <p>
+                            Economist, Business Development, Blockchain &
+                            Cryptocurrencies
+                          </p>
+                        </small>
                       </div>
                     </a>
-                    <a className="member col-4 " href="#">
+                    <a
+                      className="member col-4 "
+                      href="https://github.com/Struka9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="img-wrapper">
                         <img
                           className="hover rounded-circle"
-                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                          src={oscar}
+                          alt="Oscar"
                         />
                       </div>
                       <div className="details">
-                        <h3>Nick Johnson</h3>
-                        <p>Lead Developer</p>
+                        <h3>Oscar Presidente</h3>
+                        <p>Mobile Lead</p>
+                        <small>
+                          <p>Computer Science Engineer, Android Development</p>
+                        </small>
                       </div>
                     </a>
-                    <a className="member col-4" href="#">
+                    <a
+                      className="member col-4"
+                      href="https://twitter.com/nestor_sct"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="img-wrapper">
                         <img
                           className="hover rounded-circle"
-                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                          src={nestor}
+                          alt="Nestor"
                         />
                       </div>
                       <div className="details">
-                        <h3>Nick Johnson</h3>
-                        <p>Lead Developer</p>
+                        <h3>Nestor Escoto</h3>
+                        <p>Software Engineer</p>
+                        <small>
+                          <p>Blockchain & Fullstack Developer</p>
+                        </small>
                       </div>
                     </a>
-                    <a className="member col-4" href="#">
+                    <a
+                      className="member col-4 "
+                      href="https://www.linkedin.com/in/hn-danielpineda"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div className="img-wrapper">
                         <img
                           className="hover rounded-circle"
-                          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=184&h=184"
+                          src={daniel}
+                          alt="Daniel"
                         />
                       </div>
                       <div className="details">
-                        <h3>Nick Johnson</h3>
-                        <p>Lead Developer</p>
+                        <h3>Daniel Pineda</h3>
+                        <p>Team Advisor</p>
+                        <small>
+                          <p>
+                            Founder of Café Nativo, <br />
+                            Coffee Expert
+                          </p>
+                        </small>
                       </div>
                     </a>
                   </div>
@@ -339,34 +474,88 @@ class App extends Component {
               <div id="partners-logos" className="col-8 offset-2">
                 <div className="row justify-content-center">
                   <h1 className="col-12">Partners</h1>
-                  <p className="mt-2">
-                    We’ve hired a number of talented individuals. Many of them
-                    have contributed previously to ENS in a voluntary capacity.
+                  <p className="mt-2 col-12">
+                    Affogato Network is working together with these awesome
+                    partners.
                   </p>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="http://www.docafemarcala.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={doMarcala} alt="DO Marcala" />
+                    </a>
                   </div>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="https://www.cafenativo.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={nativo} alt="Cafe Nativo" />
+                    </a>
                   </div>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="http://galeano.coffee/home-page/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={galeano} alt="Galeano" />
+                    </a>
                   </div>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="https://adelantecoffee.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={adelante} alt="Adelante Coffee" />
+                    </a>
+                  </div>{" "}
+                  <div className="img-wrapper col-3">
+                    <a
+                      href="https://www.iadb.org/en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={bid} alt="BID" />
+                    </a>
                   </div>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="https://www.rainforest-alliance.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={rainforest} alt="Rainforest Alliance" />
+                    </a>
                   </div>
                   <div className="img-wrapper col-3">
-                    <img src="https://via.placeholder.com/180x60" />
+                    <a
+                      href="http://www.beneficiolasbrisas.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={proexo} alt="Proexo" />
+                    </a>
+                  </div>
+                  <div className="img-wrapper col-3">
+                    <a
+                      href="http://tripartito.coffee/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={tripartito} alt="Tripartito" />
+                    </a>
                   </div>
                 </div>
               </div>
 
               <div id="press-section" className="col-12">
                 <div className="row justify-content-center pb-5">
-                  <Card className="col-4 blog">
+                  <Card className="col-4 blog" onClick={this.blogLink}>
                     <CardBody>
                       <h3 className="mt-3 mb-3">
                         Explore the Blog{" "}
@@ -377,16 +566,14 @@ class App extends Component {
                         />
                       </h3>
                       <p className="">
-                        Use SQL to explore your business’ payments and revenue
-                        data, build and run custom reports, get insights, and
-                        more.
+                        To read the updates of the project from our team
                       </p>
                     </CardBody>
                   </Card>
-                  <Card className="col-4 press ml-5">
+                  <Card className="col-4 press ml-5" onClick={this.pressLink}>
                     <CardBody className="">
                       <h3 className="mt-3 mb-3">
-                        What the news say about us{" "}
+                        Press Room
                         <FontAwesomeIcon
                           icon={faArrowRight}
                           size="xs"
@@ -394,9 +581,7 @@ class App extends Component {
                         />
                       </h3>
                       <p className="">
-                        Use SQL to explore your business’ payments and revenue
-                        data, build and run custom reports, get insights, and
-                        more.
+                        Learn what the news say about Affogato Network
                       </p>
                     </CardBody>
                   </Card>
@@ -404,17 +589,17 @@ class App extends Component {
                 <div className="text-left col-8 offset-2">
                   <div className="row justify-content-center">
                     <div className="col-4">
-                      <h3>Ready to get started?</h3>
-                      <h4>Get in touch or create an account.</h4>
+                      <h3>Want to learn more?</h3>
+                      <h4>Get in touch with the team.</h4>
                     </div>
                     <div className="col-4 bottom-call-to-action">
                       <a
-                        href="#"
+                        href="mailto:info@affogatonetwork.com"
                         target="_blank"
-                        class=" col-12 btn btn-primary mt-2"
+                        className=" col-12 btn btn-primary mt-2"
                         rel="noopener noreferrer"
                       >
-                        Contact Sales
+                        Contact Us!
                       </a>
                     </div>
                   </div>
