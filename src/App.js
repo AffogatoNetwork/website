@@ -8,6 +8,7 @@ import daniel from "./images/daniel.jpg";
 import robert from "./images/robert.jpeg";
 import oscar from "./images/oscar.jpeg";
 import nestor from "./images/nestor.jpeg";
+import jorge from "./images/jorge.jpg";
 import phone from "./images/phone.svg";
 import case1 from "./images/case1.jpg";
 import case2 from "./images/case2.jpg";
@@ -414,9 +415,33 @@ class App extends Component {
                       </div>
                       <div className="details">
                         <h3>Oscar Presidente</h3>
-                        <p>Mobile Lead</p>
+                        <p>Mobile Developer</p>
                         <small>
                           <p>Computer Science Engineer, Android Development</p>
+                        </small>
+                      </div>
+                    </a>
+                    <a
+                      className="member col-sm-4 col-xs-12"
+                      href="https://www.linkedin.com/in/jorgedestephen/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="img-wrapper">
+                        <img
+                          className="hover rounded-circle"
+                          src={jorge}
+                          alt="Jorge"
+                        />
+                      </div>
+                      <div className="details">
+                        <h3>Jorge Destephen</h3>
+                        <p>Software Engineer</p>
+                        <small>
+                          <p>
+                            Backend Developer, <br />Computer Science Master’s
+                            Degree
+                          </p>
                         </small>
                       </div>
                     </a>
