@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 import "./Landing.css";
 import "./App.css";
-import icon from "./images/logo-white.png";
+import icon from "./images/logo.png";
 import cristian from "./images/cristian.jpg";
 import daniel from "./images/daniel.jpg";
 import robert from "./images/robert.jpeg";
@@ -91,7 +91,7 @@ class App extends Component {
                   </NavItem>
                   <NavItem>
                     <Link
-                      className="nav-link"
+                      className="nav-link link"
                       to="section-2"
                       smooth={true}
                       isDynamic={true}
@@ -102,7 +102,7 @@ class App extends Component {
                   </NavItem>
                   <NavItem>
                     <Link
-                      className="nav-link"
+                      className="nav-link link"
                       to="secondary"
                       smooth={true}
                       isDynamic={true}
@@ -113,7 +113,7 @@ class App extends Component {
                   </NavItem>
                   <NavItem>
                     <Link
-                      className="nav-link"
+                      className="nav-link link"
                       to="partners-logos"
                       smooth={true}
                       isDynamic={true}
@@ -124,7 +124,7 @@ class App extends Component {
                   </NavItem>
                   <NavItem>
                     <Link
-                      className="nav-link"
+                      className="nav-link link"
                       to="press-section"
                       smooth={true}
                       isDynamic={true}
@@ -135,7 +135,7 @@ class App extends Component {
                   </NavItem>
                   <NavItem>
                     <Link
-                      className="nav-link"
+                      className="nav-link link"
                       to="press-section"
                       smooth={true}
                       isDynamic={true}
@@ -624,7 +624,7 @@ class App extends Component {
                     </div>
                     <div className="col-sm-4 col-xs-12 bottom-call-to-action">
                       <a
-                        href="mailto:info@affogatonetwork.com"
+                        href="mailto:cristian@affogato.co"
                         target="_blank"
                         className=" col-12 btn btn-primary mt-2"
                         rel="noopener noreferrer"
