@@ -41,6 +41,7 @@ import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 import Steps from "rc-steps";
 import "rc-steps/assets/index.css";
 import "rc-steps/assets/iconfont.css";
+import { PublicAddress } from "rimble-ui";
 
 class App extends Component {
   componentDidMount() {
@@ -439,8 +440,8 @@ class App extends Component {
                         <p>Software Engineer</p>
                         <small>
                           <p>
-                            Backend Developer, <br />Computer Science Master’s
-                            Degree
+                            Backend Developer, <br />
+                            Computer Science Master’s Degree
                           </p>
                         </small>
                       </div>
@@ -490,6 +491,25 @@ class App extends Component {
                         </small>
                       </div>
                     </a>
+                    <h1 className="col-12">Donations</h1>
+                    <p className="mt-4 col-12">
+                      We been bootstraping this project for over a year, your
+                      support means a lot to us. With your help, we're able to
+                      help more coffee farmers, reaching our goal to create a
+                      new economy for farmers. We have set up a multisig smart
+                      contract to accept donations, our address is:{" "}
+                      <a
+                        href="https://etherscan.io/address/affogato.eth"
+                        target="blank"
+                      >
+                        Affogato.eth
+                      </a>
+                    </p>
+                    <PublicAddress
+                      address="0xA7B4D5CBfd5e96704f758C98F1248B6A6ff09071"
+                      label=""
+                      required
+                    />
                   </div>
                 </div>
               </div>
