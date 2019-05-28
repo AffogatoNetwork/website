@@ -21,6 +21,7 @@ import galeano from "./images/galeano.jpg";
 import bid from "./images/bid.png";
 import rainforest from "./images/rainforest.png";
 import tripartito from "./images/tripartito.png";
+import ethereumLogo from "./images/ethereum.png";
 import {
   Nav,
   NavItem,
@@ -168,6 +169,11 @@ class App extends Component {
                     >
                       Get our newsletter
                     </a>
+                    <span className="col-lg-10 mt-4 pl-4 powered">
+                      <a href="https://ethereum.org/" target="blank">
+                        <img src={ethereumLogo} />
+                      </a>
+                    </span>
                   </div>
                 </div>
                 <div className="col-lg-4 d-none d-lg-block ">
