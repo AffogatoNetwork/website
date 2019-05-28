@@ -170,7 +170,12 @@ class App extends Component {
                       Get our newsletter
                     </a>
                     <span className="col-lg-10 mt-4 pl-4 powered">
-                      <a href="https://ethereum.org/" target="blank">
+                      <a
+                        href="https://ethereum.org/"
+                        target="blank"
+                        alt="built on ethereum"
+                        rel="noopener noreferrer"
+                      >
                         <img src={ethereumLogo} />
                       </a>
                     </span>
