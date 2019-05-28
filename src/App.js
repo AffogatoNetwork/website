@@ -493,11 +493,12 @@ class App extends Component {
                     </a>
                     <h1 className="col-12">Donations</h1>
                     <p className="mt-4 col-12">
-                      We been bootstraping this project for over a year, your
-                      support means a lot to us. With your help, we're able to
-                      help more coffee farmers, reaching our goal to create a
-                      new economy for farmers. We have set up a multisig smart
-                      contract to accept donations, our address is:{" "}
+                      We have been bootstrapping this project for over a year ,
+                      so your support means a lot to us. With your help, we will
+                      be able to empower more coffee farmers with tools to earn
+                      more money, and change their life. We have set up a
+                      multisig smart contract to accept donations, our address
+                      is:{" "}
                       <a
                         href="https://etherscan.io/address/affogato.eth"
                         target="blank"
