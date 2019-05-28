@@ -173,10 +173,9 @@ class App extends Component {
                       <a
                         href="https://ethereum.org/"
                         target="blank"
-                        alt="built on ethereum"
                         rel="noopener noreferrer"
                       >
-                        <img src={ethereumLogo} />
+                        <img src={ethereumLogo} alt="built on ethereum" />
                       </a>
                     </span>
                   </div>
