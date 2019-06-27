@@ -162,12 +162,12 @@ class App extends Component {
                   </p>
                   <div className="call-to-action ">
                     <a
-                      href="https://www.getdrip.com/forms/729610656/submissions/new"
+                      href="https://commerce.coinbase.com/checkout/440517c5-83c2-4f6c-b522-5d2b7db3c351"
                       target="_blank"
-                      className="col-md-5 col-lg-5 btn btn-primary"
+                      className="col-md-5 col-lg-5 btn btn-primary buy-with-crypto"
                       rel="noopener noreferrer"
                     >
-                      Get our newsletter
+                      Buy Blockchain Coffee
                     </a>
                     <span className="col-lg-10 mt-4 pl-4 powered">
                       <a
